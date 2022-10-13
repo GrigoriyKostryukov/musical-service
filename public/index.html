@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="/search.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -18,20 +18,484 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>Last.fm</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body class="app">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <header class="header">
+    <div class="header__player">
+      <a href="/">
+        <img src="/images/player_default_album.430223706b14.png" class="imageLink">
+      </a>
+      <ul class="header__playerControls">
+        <li><button class="header__playerButton"><img src="/images/player_previous.png"></button></li>
+        <li><button class="header__playerButton"><img src="/images/player_play.png"></button></li>
+        <li><button class="header__playerButton"><img src="/images/player_next.png"></button></li>
+        <li><button class="header__playerButton"><img src="/images/player_like.png"></button></li>
+      </ul>
+    </div>
+    <div class="header__logoArea">
+      <a href="/">
+        <img src="/images/logo.png">
+      </a>
+    </div>
+    <div class="header__nav">
+      <a href="/search.html">
+        <img src="/images/icon_search.svg" class="header__searchIcon">
+      </a>
+      <ul class="header__navList">
+        <li class="header__navItem">
+          <a href="/" class="navigationLink">Home</a>
+        </li>
+        <li class="header__navItem">
+          <a href="/" class="navigationLink">Live</a>
+        </li>
+        <li class="header__navItem">
+          <a href="/" class="navigationLink">Misic</a>
+        </li>
+        <li class="header__navItem">
+          <a href="/" class="navigationLink">Charts</a>
+        </li>
+        <li class="header__navItem">
+          <a href="/" class="navigationLink">Events</a>
+        </li>
+        <li class="header__navItem">
+          <a href="/" class="navigationLink">Features</a>
+        </li>
+      </ul>
+      <a href="/">
+        <img class="header__avatar" src="/images/user_avatar_default.png" />
+      </a>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="main__heading">Music</h1>
+      <div class="main__section">
+        <h2 class="main__sectionHeading">Hot right now</h2>
+        <ul class="main__artists">
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main__artistCard">
+              <img src="/images/elvis-presley.jpg" class="main__artistImage" />
+              <p class="main__artistName">Elvis Presley</p>
+              <ul class="main__genresList">
+                <li><a class="main__genreTag" href="/">pop</a></li>
+                <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                <li><a class="main__genreTag" href="/">country</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="main__section">
+        <h2 class="main__sectionHeading">PopularTracks</h2>
+        <ul class="main__trackList">
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="main__trackCard">
+              <img src="/images/cover.jpg" class="main__trackCover" />
+              <div class="main__trackInfo">
+                <h4 class="main__trackName">Yellow Submarine</h4>
+                <a href="/" class="main__trackArtistName">The Beatles</a>
+                <ul class="main__genresList">
+                  <li><a class="main__genreTag" href="/">pop</a></li>
+                  <li><a class="main__genreTag" href="/">rock-n-roll</a></li>
+                  <li><a class="main__genreTag" href="/">country</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__column">
+            <h2 class="footer__heading">COMPANY</h2>
+            <ul class="footer__linkList">
+              <li><a href="/" class="navigationLink">About Last.fm</a></li>
+              <li><a href="/" class="navigationLink">Contact Us</a></li>
+              <li><a href="/" class="navigationLink">Jobs</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h2 class="footer__heading">HELP</h2>
+            <ul class="footer__linkList">
+              <li><a href="/" class="navigationLink">Track My Music</a></li>
+              <li><a href="/" class="navigationLink">Community Support</a></li>
+              <li><a href="/" class="navigationLink">Community Guidelines</a></li>
+              <li><a href="/" class="navigationLink">Help</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h2 class="footer__heading">GOODIES</h2>
+            <ul class="footer__linkList">
+              <li><a href="/" class="navigationLink">Download Scrobbler</a></li>
+              <li><a href="/" class="navigationLink">Developer API</a></li>
+              <li><a href="/" class="navigationLink">Free Music Downloads</a></li>
+              <li><a href="/" class="navigationLink">Merchandise</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h2 class="footer__heading">ACCOUNT</h2>
+            <ul class="footer__linkList">
+              <li><a href="/" class="navigationLink">Inbox</a></li>
+              <li><a href="/" class="navigationLink">Settings</a></li>
+              <li><a href="/" class="navigationLink">Last.fm Pro</a></li>
+              <li><a href="/" class="navigationLink">Logout</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h2 class="footer__heading">FOLLOW US</h2>
+            <ul class="footer__linkList">
+              <li><a href="/" class="navigationLink">Facebook</a></li>
+              <li><a href="/" class="navigationLink">Twitter</a></li>
+              <li><a href="/" class="navigationLink">Instagram</a></li>
+              <li><a href="/" class="navigationLink">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <ul class="footer__languageSelector">
+          <li><button class="footer__languageButton footer__activeLanguage">English</button></li>
+          <li><button class="footer__languageButton">Deutsch</button></li>
+          <li><button class="footer__languageButton">Español</button></li>
+          <li><button class="footer__languageButton">Français</button></li>
+          <li><button class="footer__languageButton">Italiano</button></li>
+          <li><button class="footer__languageButton">日本語</button></li>
+          <li><button class="footer__languageButton">Polski</button></li>
+          <li><button class="footer__languageButton">Português</button></li>
+          <li><button class="footer__languageButton">Русский</button></li>
+          <li><button class="footer__languageButton">Svenska</button></li>
+          <li><button class="footer__languageButton">简体中文</button></li>
+        </ul>
+        <a class="navigationLink" href="/">Time zone: <strong>Europe/Moscow</strong></a>
+        <ul class="footer__legalInfo">
+          <li><span class="footer__legalItem">CBS Interactive © 2022 Last.fm Ltd. All rights reserved</span>
+          <li><a href="/" class="footer__legalItemlink">Terms of Use</a></li>
+          <li><a href="/" class="footer__legalItemlink">Privacy Policy</a></li>
+          <li><a href="/" class="footer__legalItemlink">Legal Policies</a></li>
+          <li><a href="/" class="footer__legalItemlink">Cookies Policy</a></li>
+          <li><a href="/" class="footer__legalItemlink">Cookie Information</a></li>
+          <li><a href="/" class="footer__legalItemlink">Jobs at ViacomCBS</a></li>
+          <li><a href="/" class="footer__legalItemlink">Last.fm Music</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
