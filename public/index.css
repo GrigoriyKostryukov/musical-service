@@ -7,7 +7,7 @@
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     height: 100vh;
-    font-family: Open Sans, Lucida Grande, Helvetica Neue, Helvetica, Arial, Sans-serif;
+    font-family: Barlow, Open Sans, Arial, Sans-serif;
 }
 
 .header,
@@ -62,13 +62,17 @@
     width: 32px;
 }
 
-.link, .navigationLink {
+.link {
     color: inherit;
     text-decoration: none;
 }
 
-.navigationLink:hover {
+.link:hover {
     color: #ffffff;
+}
+
+.linkHoverUnderlined:hover {
+    text-decoration: underline;
 }
 
 .header__player {
@@ -151,16 +155,6 @@
 
 .footer__legalItem {
     margin-right: 10px;
-}
-
-.footer__legalItemlink {
-    color: inherit;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.footer__legalItemlink:hover {
-    text-decoration: underline;
 }
 
 .content {

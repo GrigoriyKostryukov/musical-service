@@ -6,6 +6,8 @@
   <link rel="icon" href="/images/favicon.ico" />
   <link rel="stylesheet" href="/index.css" />
   <link rel="stylesheet" href="/search.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
@@ -29,10 +31,10 @@
         <img src="/images/player_default_album.430223706b14.png" class="imageLink">
       </a>
       <ul class="header__playerControls">
-        <li><button class="header__playerButton"><img src="/images/player_previous.png"></button></li>
-        <li><button class="header__playerButton"><img src="/images/player_play.png"></button></li>
-        <li><button class="header__playerButton"><img src="/images/player_next.png"></button></li>
-        <li><button class="header__playerButton"><img src="/images/player_like.png"></button></li>
+        <li><button type="button" class="header__playerButton"><img src="/images/player_previous.png"></button></li>
+        <li><button type="button" class="header__playerButton"><img src="/images/player_play.png"></button></li>
+        <li><button type="button" class="header__playerButton"><img src="/images/player_next.png"></button></li>
+        <li><button type="button" class="header__playerButton"><img src="/images/player_like.png"></button></li>
       </ul>
     </div>
     <div class="header__logoArea">
@@ -46,22 +48,22 @@
       </a>
       <ul class="header__navList">
         <li class="header__navItem">
-          <a href="/" class="navigationLink">Home</a>
+          <a href="/" class="link">Home</a>
         </li>
         <li class="header__navItem">
-          <a href="/" class="navigationLink">Live</a>
+          <a href="/" class="link">Live</a>
         </li>
         <li class="header__navItem">
-          <a href="/" class="navigationLink">Misic</a>
+          <a href="/" class="link">Misic</a>
         </li>
         <li class="header__navItem">
-          <a href="/" class="navigationLink">Charts</a>
+          <a href="/" class="link">Charts</a>
         </li>
         <li class="header__navItem">
-          <a href="/" class="navigationLink">Events</a>
+          <a href="/" class="link">Events</a>
         </li>
         <li class="header__navItem">
-          <a href="/" class="navigationLink">Features</a>
+          <a href="/" class="link">Features</a>
         </li>
       </ul>
       <a href="/">
@@ -423,45 +425,45 @@
           <div class="footer__column">
             <h2 class="footer__heading">COMPANY</h2>
             <ul class="footer__linkList">
-              <li><a href="/" class="navigationLink">About Last.fm</a></li>
-              <li><a href="/" class="navigationLink">Contact Us</a></li>
-              <li><a href="/" class="navigationLink">Jobs</a></li>
+              <li><a href="/" class="link">About Last.fm</a></li>
+              <li><a href="/" class="link">Contact Us</a></li>
+              <li><a href="/" class="link">Jobs</a></li>
             </ul>
           </div>
           <div class="footer__column">
             <h2 class="footer__heading">HELP</h2>
             <ul class="footer__linkList">
-              <li><a href="/" class="navigationLink">Track My Music</a></li>
-              <li><a href="/" class="navigationLink">Community Support</a></li>
-              <li><a href="/" class="navigationLink">Community Guidelines</a></li>
-              <li><a href="/" class="navigationLink">Help</a></li>
+              <li><a href="/" class="link">Track My Music</a></li>
+              <li><a href="/" class="link">Community Support</a></li>
+              <li><a href="/" class="link">Community Guidelines</a></li>
+              <li><a href="/" class="link">Help</a></li>
             </ul>
           </div>
           <div class="footer__column">
             <h2 class="footer__heading">GOODIES</h2>
             <ul class="footer__linkList">
-              <li><a href="/" class="navigationLink">Download Scrobbler</a></li>
-              <li><a href="/" class="navigationLink">Developer API</a></li>
-              <li><a href="/" class="navigationLink">Free Music Downloads</a></li>
-              <li><a href="/" class="navigationLink">Merchandise</a></li>
+              <li><a href="/" class="link">Download Scrobbler</a></li>
+              <li><a href="/" class="link">Developer API</a></li>
+              <li><a href="/" class="link">Free Music Downloads</a></li>
+              <li><a href="/" class="link">Merchandise</a></li>
             </ul>
           </div>
           <div class="footer__column">
             <h2 class="footer__heading">ACCOUNT</h2>
             <ul class="footer__linkList">
-              <li><a href="/" class="navigationLink">Inbox</a></li>
-              <li><a href="/" class="navigationLink">Settings</a></li>
-              <li><a href="/" class="navigationLink">Last.fm Pro</a></li>
-              <li><a href="/" class="navigationLink">Logout</a></li>
+              <li><a href="/" class="link">Inbox</a></li>
+              <li><a href="/" class="link">Settings</a></li>
+              <li><a href="/" class="link">Last.fm Pro</a></li>
+              <li><a href="/" class="link">Logout</a></li>
             </ul>
           </div>
           <div class="footer__column">
             <h2 class="footer__heading">FOLLOW US</h2>
             <ul class="footer__linkList">
-              <li><a href="/" class="navigationLink">Facebook</a></li>
-              <li><a href="/" class="navigationLink">Twitter</a></li>
-              <li><a href="/" class="navigationLink">Instagram</a></li>
-              <li><a href="/" class="navigationLink">YouTube</a></li>
+              <li><a href="/" class="link">Facebook</a></li>
+              <li><a href="/" class="link">Twitter</a></li>
+              <li><a href="/" class="link">Instagram</a></li>
+              <li><a href="/" class="link">YouTube</a></li>
             </ul>
           </div>
         </div>
@@ -470,28 +472,28 @@
     <div class="footer__bottom">
       <div class="container">
         <ul class="footer__languageSelector">
-          <li><button class="footer__languageButton footer__activeLanguage">English</button></li>
-          <li><button class="footer__languageButton">Deutsch</button></li>
-          <li><button class="footer__languageButton">Español</button></li>
-          <li><button class="footer__languageButton">Français</button></li>
-          <li><button class="footer__languageButton">Italiano</button></li>
-          <li><button class="footer__languageButton">日本語</button></li>
-          <li><button class="footer__languageButton">Polski</button></li>
-          <li><button class="footer__languageButton">Português</button></li>
-          <li><button class="footer__languageButton">Русский</button></li>
-          <li><button class="footer__languageButton">Svenska</button></li>
-          <li><button class="footer__languageButton">简体中文</button></li>
+          <li><button type="button" class="footer__languageButton footer__activeLanguage">English</button></li>
+          <li><button type="button" class="footer__languageButton">Deutsch</button></li>
+          <li><button type="button" class="footer__languageButton">Español</button></li>
+          <li><button type="button" class="footer__languageButton">Français</button></li>
+          <li><button type="button" class="footer__languageButton">Italiano</button></li>
+          <li><button type="button" class="footer__languageButton">日本語</button></li>
+          <li><button type="button" class="footer__languageButton">Polski</button></li>
+          <li><button type="button" class="footer__languageButton">Português</button></li>
+          <li><button type="button" class="footer__languageButton">Русский</button></li>
+          <li><button type="button" class="footer__languageButton">Svenska</button></li>
+          <li><button type="button" class="footer__languageButton">简体中文</button></li>
         </ul>
-        <a class="navigationLink" href="/">Time zone: <strong>Europe/Moscow</strong></a>
+        <a class="link" href="/">Time zone: <strong>Europe/Moscow</strong></a>
         <ul class="footer__legalInfo">
           <li><span class="footer__legalItem">CBS Interactive © 2022 Last.fm Ltd. All rights reserved</span>
-          <li><a href="/" class="footer__legalItemlink">Terms of Use</a></li>
-          <li><a href="/" class="footer__legalItemlink">Privacy Policy</a></li>
-          <li><a href="/" class="footer__legalItemlink">Legal Policies</a></li>
-          <li><a href="/" class="footer__legalItemlink">Cookies Policy</a></li>
-          <li><a href="/" class="footer__legalItemlink">Cookie Information</a></li>
-          <li><a href="/" class="footer__legalItemlink">Jobs at ViacomCBS</a></li>
-          <li><a href="/" class="footer__legalItemlink">Last.fm Music</a></li>
+            <li><a href="/" class="link linkHoverUnderlined footer__legalItem">Terms of Use</a></li>
+            <li><a href="/" class="link linkHoverUnderlined footer__legalItem">Privacy Policy</a></li>
+            <li><a href="/" class="link linkHoverUnderlined footer__legalItem">Legal Policies</a></li>
+            <li><a href="/" class="link linkHoverUnderlined footer__legalItem">Cookies Policy</a></li>
+            <li><a href="/" class="link linkHoverUnderlined footer__legalItem">Cookie Information</a></li>
+            <li><a href="/" class="link linkHoverUnderlined footer__legalItem">Jobs at ViacomCBS</a></li>
+            <li><a href="/" class="link linkHoverUnderlined footer__legalItem">Last.fm Music</a></li>
         </ul>
       </div>
     </div>
